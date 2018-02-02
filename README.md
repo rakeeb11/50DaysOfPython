@@ -1,4 +1,5 @@
 # 50 days of Python
+> 50 days of learning python. One commit at a time :smile:
 
 This is a personal project where I document my daily doodles on `Python`. The reason I have this on `Github` is for social accountability.
 
@@ -15,4 +16,4 @@ Project is grouped into:
 │   └── ...
 │   
 
-```
+```0864678109a838e3d
