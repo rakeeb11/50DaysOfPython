@@ -27,24 +27,23 @@
 
 print("Please input your IP:")
 ip = input()
-segment = ''
+segment = ""
 
-# for i in range(0, len(ip)):
-#     if ip[i] == '.':  # stop and print all segment
-#         print("Found segment: {} of length {}".format(segment, len(segment)))
-#         segment = ''  # reset segment
-#     else:
-#         if ip[i] in '0123456789':  # check if segment is a number
-#             segment += ip[i]
-#         if i + 1 == len(ip):  # check if last index
-#             print("Found last segment: {} of length {}".format(segment, len(segment)))
-
-
-split = ip.split(".")
-for index, char in enumerate(split):
-    if index + 1 == len(split):
+for i in range(0, len(ip)):
+    if ip[i] == '.':  # stop and print all segment
         print("Found segment: {} of length {}".format(segment, len(segment)))
-        segment = ''
+        segment = ''  # reset segment
     else:
-        if char in '0123456789':  # check if segment is a number
-            segment += char
+        if ip[i] in '0123456789':  # check if segment is a number
+            segment += ip[i]
+        if i + 1 == len(ip):  # check if last index
+            print("Found last segment: {} of length {}".format(segment, len(segment)))
+
+# split = ip.split(".")
+# for index, char in enumerate(split):
+#     if index + 1 == len(split):
+#         print("Found segment: {} of length {}".format(segment, len(segment)))
+#         segment = ''
+#     else:
+#         if char in '0123456789':  # check if segment is a number
+#             segment += char
